@@ -1,0 +1,8 @@
+
+Data visualization has gained immense importance due to the widespread application of big data science. Practitioners employ visualization as a practical tool for Exploratory Data Analysis. Exploratory visualization helps in gleaning early insights into the structure of the data, guiding deeper data analysis. In the past few years, researchers have discovered novel methods of rendering complex data that arises in various domains - scientific, business, government, healthcare, to name a few. Interactivity has also contributed to the development of what are now called as "visualization stories".
+
+At School of Information Sciences, we offer a course on data visualization. 
+
+The pedagogy and instructional design of this course is inspired by Leland Wilkinson's exceptional book "The Grammar of Graphics", which we shall refer to as GoG, for short. GoG proposes a layered approach to the specification and design of graphics or visualization of data. Quite interestingly, GoG employs principles of object-orientation to assign responsibilities to different layers
+of graphics specifications.
+
