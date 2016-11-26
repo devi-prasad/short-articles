@@ -1,8 +1,25 @@
+The Grammar of Graphics and Data Visualization 
 
-Data visualization has gained immense importance due to the widespread application of big data science. Practitioners employ visualization as a practical tool for Exploratory Data Analysis. Exploratory visualization helps in gleaning early insights into the structure of the data, guiding deeper data analysis. In the past few years, researchers have discovered novel methods of rendering complex data that arises in various domains - scientific, business, government, healthcare, to name a few. Interactivity has also contributed to the development of what are now called as "visualization stories".
+Data visualization has gained immense importance due to the widespread application of big data science. In the past few years, researchers have discovered novel methods of rendering complex data that arises in different domains - scientific, business, and government, to name a few. 
 
-At School of Information Sciences, we offer a course on data visualization. 
+At School of Information Sciences, we offer a course on data visualization. Its instructional design is inspired by Leland Wilkinson's exceptional book "The Grammar of Graphics", which we shall refer to as GoG, for short. We employ two programming languages: R and Python. Students use R libraries, and Python libraries such as Pandas, NumPy, and Matplotlib, for data analysis and rendering graphics.
 
-The pedagogy and instructional design of this course is inspired by Leland Wilkinson's exceptional book "The Grammar of Graphics", which we shall refer to as GoG, for short. GoG proposes a layered approach to the specification and design of graphics or visualization of data. Quite interestingly, GoG employs principles of object-orientation to assign responsibilities to different layers
-of graphics specifications.
+GoG proposes a layered approach to the specification and design of graphics. Quite interestingly, GoG employs principles of object-orientation to assign responsibilities to different layers of graphics specifications.
 
+GoG identifies six types of 'statements' that in some sense define the core semantics or 'meaning' of the 'grammar' of graphics:
+   (1) DATA operations.
+       Identify and separate variables of interest.
+       Create a new data frame - restructure the given data.
+   (2) TRANSLATE data.
+       Sort data, drop duplicates, drop outliers, and such.
+   (3) SCALE data.
+       apply log scale, for example.
+   (4) COORDINATE system definition.
+       Choose Cartesian-system or polar system or spherical system, etc.
+   (5) ELEMENT definitions.
+       Identify graphic elements such as points, lines, and surfaces.
+       Define aesthetic components such as color, size, and fonts.
+   (6) GUIDE
+       Axes guides, axes markers, legends, etc.
+
+We will present a few interesting pieces of our pedagogy in a future article.
