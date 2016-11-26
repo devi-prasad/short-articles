@@ -1,0 +1,36 @@
+Using Assertions as Formal Specifications
+
+Assertions have a long history in computer science. Sir Tony Hoare, a Turing Award winner, originally conceived assertions for rigorously specifying software requirements. Over time, software engineers came to see assertions as mechanisms for expressing preconditions, postconditions, and other logical properties of programs. In the due course, unit testing frameworks for programing languages embraced assertions for expressing test cases. At the time of this writing, most programming languages support assertions in programs.
+
+Simplicity is one of the charms of assertions. The following pair of C program snippets demonstrate their expressive power. This is a straightforward implementation of the linear search algorithm:
+
+int linear_search(int *arr, int size, int key)
+{
+    int i;
+
+    for (i = 0; i < size; i++) {
+        if (a[i] == key) return i;
+    }
+    return -1;
+}
+
+Given this implementation, we can state the precondition that 'arr' must be a valid reference to data. Further, the postcondition that returned 'index' is actually the first position where 'key' is found, and that 'key' cannot be found in any position before 'index'.
+
+
+int spec_linear_search(int *arr, int size, int key)
+{
+    assert(arr != NULL);
+    assert(size >= 0);
+
+    index = linear_search(arr, size, key);
+
+    assert(index == -1 || (index >= 0 && index < size && arr[index] == key));
+
+    int i, n = (index == -1) ? size : index;
+    for (i = 0; i < n; i++) {
+        assert(arr[i] != key);
+    }
+}
+
+It is easy to see that spec_linear_search actually expresses hard requirements on ANY implementation of the linear search algorithm.
+
