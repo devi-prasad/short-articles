@@ -1,0 +1,13 @@
+Teaching How to Design Software for Embedded Systems
+
+The School of Information Sciences (SOIS) offers a Master of Engineering (ME) program in Embedded Systems. This is one of the most popular programs attracting students with an undergraduate degree in different engineering disciplines.
+
+Designing software for embedded systems is difficult. Embedded systems are members of what are called 'Reactive Systems'. They are composed of components exhibiting concurrent behaviors obeying strict protocols. Protocols define rules governing permitted interactions. In addition, a reactive systems continually keep interacting with their environment. 
+
+An automotive car, for example, may have hundreds of subsystems with complex internal interactions. The human driver could also be engaged in controlling car's actions. Thus, there may be numerous simultaneous interactions taking place at different levels of the entire system. This renders reactive systems hard to design and reason about.
+
+Model checking is one of the foremost formal methods used to design reactive systems. This technology is based on the engineering principle that defining models is simpler than defining the entire system at one fell swoop. 
+
+At SOIS, we use SPIN logic model checker. SPIN’s modeling language provides high-level abstractions such as processes, messages, ports, basic data types and arrays. A model is described in a high level language, and a formal specification of the behaviors the model should satisfy is given as an expression in Linear Temporal Logic (LTL). When a behavior violating the specification is found, the model checker produces a trace of the counter-example which accurateely pinpointing the error!
+
+Model checkers help catch design flaws very early in the development life cycle. This improves the quality of the final system. In the end, students learn to think more clearly about system architecture. 
